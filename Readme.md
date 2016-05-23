@@ -18,9 +18,10 @@ $ curl -v http://localhost:5000
 
 ## Deploy to Heroku
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
+# Spin up your dynos
+
 ```bash
-$ heroku create --stack cedar
-$ heroku addons:add redistogo:nano
-$ git push heroku master
 $ heroku scale web=1 worker=1
 ```
