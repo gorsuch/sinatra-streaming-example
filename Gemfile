@@ -1,6 +1,6 @@
-source :rubygems
+source 'https://rubygems.org'
 
 gem 'foreman'
 gem 'redis'
 gem 'sinatra'
-gem 'thin'
+gem 'puma'

@@ -1,0 +1,20 @@
+{
+  "name": "Sinatra Streaming Example",
+  "description": "A simple demonstration of streaming Redis pub/sub data over HTTP via Sinatra's new streaming capabilities.",
+  "repository": "https://github.com/gorsuch/sinatra-streaming-example",
+  "logo": "http://www.sinatrarb.com/images/logo.png",
+  "keywords": ["sinatra", "ruby", "streaming", "redis"],
+  "addons": [
+    "heroku-redis"
+  ],
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+  },
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}

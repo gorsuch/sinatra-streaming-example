@@ -2,7 +2,7 @@ require 'redis'
 require 'sinatra'
 
 configure do
-  redis_url = ENV["REDISTOGO_URL"] || "redis://localhost:6379"
+  redis_url = ENV["REDIS_URL"] || "redis://localhost:6379"
   uri = URI.parse(redis_url)
   set :redis, Redis.new(:host => uri.host, :port => uri.port, :password => uri.password)
 end
