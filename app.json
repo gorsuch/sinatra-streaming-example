@@ -5,7 +5,6 @@
   "logo": "http://www.sinatrarb.com/images/logo.png",
   "keywords": ["sinatra", "ruby", "streaming", "redis"],
   "addons": [
-    "mongohq",
-    "rediscloud"
+    "heroku-redis"
   ]
 }
