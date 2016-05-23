@@ -20,8 +20,7 @@ $ curl -v http://localhost:5000
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-# Spin up your dynos
+The right dyno formation will spin up. The worker will crash until the Redis DB is ready. Once ready restart it with:
 
-```bash
-$ heroku scale web=1 worker=1
-```
+`heroku restart worker`
+
